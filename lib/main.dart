@@ -12,10 +12,11 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       initialRoute: HomePage.route,
       onGenerateRoute: (settings) {
         final routes = {
-          HomePage.route: (_) => HomePage(),
+          HomePage.route: (_) => const HomePage(),
           PhotoDetailPage.route: (_) => PhotoDetailPage(
                 args: settings.arguments as PhotoDetailPageArgs,
               ),

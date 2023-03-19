@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class PhotoDetailPage extends StatelessWidget {
   static const route = 'photo';
   final PhotoDetailPageArgs args;
-  const PhotoDetailPage({required this.args});
+  const PhotoDetailPage({super.key, required this.args});
 
   @override
   Widget build(BuildContext context) {
